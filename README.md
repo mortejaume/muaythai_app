@@ -35,5 +35,8 @@ Cómo ejecutarlo
 -Abrir en el navegador:
 http://127.0.0.1:5000 o http://localhost:5000
 
+Enlace GitHub:
+https://github.com/mortejaume/muaythai_app
+
 Proyecto realizado por:
 Jaume Morte Dominguez
