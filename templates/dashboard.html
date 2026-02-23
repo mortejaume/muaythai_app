@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Panel de usuario</h2>
+
+<p>Bienvenido, <strong>{{ session.username }}</strong></p>
+
+<a href="/add_training">Añadir nuevo entrenamiento</a>
+
+<h3>Mis entrenamientos</h3>
+
+{% if trainings %}
+    <ul>
+    {% for training in trainings %}
+        <li>
+            <strong>{{ training[1] }}</strong><br>
+            Descripción: {{ training[2] }}<br>
+            Fecha: {{ training[3] }}
+        </li>
+        <hr>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No tienes entrenamientos registrados todavía.</p>
+{% endif %}
+
+{% endblock %}

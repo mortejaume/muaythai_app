@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Añadir entrenamiento</h2>
+
+<form method="POST">
+    <label>Título del entrenamiento:</label>
+    <input type="text" name="title" required>
+
+    <label>Descripción:</label>
+    <textarea name="description"></textarea>
+
+    <label>Fecha:</label>
+    <input type="date" name="date" required>
+
+    <button type="submit">Guardar entrenamiento</button>
+</form>
+
+<a href="/dashboard">Volver al panel</a>
+
+{% endblock %}

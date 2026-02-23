@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Muay Thai World 🥊</h1>
+
+<p>
+El <strong>Muay Thai</strong> es el deporte nacional de Tailandia y es conocido como 
+el arte de las ocho extremidades, ya que utiliza puños, codos, rodillas y piernas.
+</p>
+
+<img src="{{ url_for('static', filename='images/muaythai1.jpg') }}" 
+     alt="Combate de Muay Thai" 
+     class="imagen-destacada">
+
+<h2>¿Qué es el Muay Thai?</h2>
+
+<p>
+El Muay Thai combina técnica, resistencia, disciplina y estrategia. 
+Es uno de los deportes de combate más completos y exigentes del mundo.
+</p>
+
+<p>
+Además de ser un deporte profesional, también es una excelente forma de 
+entrenamiento físico y mental.
+</p>
+
+<h2>Luchadores destacados</h2>
+
+<ul>
+    <li>
+        <strong>Buakaw Banchamek</strong> – Uno de los luchadores más famosos a nivel mundial.
+    </li>
+    <li>
+        <strong>Saenchai</strong> – Conocido por su técnica y estilo espectacular.
+    </li>
+    <li>
+        <strong>Rodtang Jitmuangnon</strong> – Actual estrella del Muay Thai moderno.
+    </li>
+</ul>
+
+<img src="{{ url_for('static', filename='images/muaythai2.jpg') }}" 
+     alt="Entrenamiento de Muay Thai" 
+     class="imagen-destacada">
+
+<h2>Únete a nuestra comunidad</h2>
+
+<p>
+Regístrate para guardar tus entrenamientos, mejorar tu disciplina 
+y seguir tu progreso personal.
+</p>
+
+{% if not session.get('user_id') %}
+    <a href="/register">
+        <button>Comenzar ahora</button>
+    </a>
+{% endif %}
+
+{% endblock %}

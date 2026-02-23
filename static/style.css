@@ -1,0 +1,181 @@
+/* ============================= */
+/*  ESTILO MUAY THAI WORLD 🇹🇭 */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(45,42,74,0.9), rgba(45,42,74,0.9)),
+                url("images/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #FFFFFF;
+    min-height: 100vh;
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+
+nav {
+    background-color: #A51931;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2D2A4A;
+}
+
+/* ============================= */
+/* CONTENEDOR PRINCIPAL */
+/* ============================= */
+
+.contenedor {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* ============================= */
+/* TITULOS */
+/* ============================= */
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    border-left: 6px solid #A51931;
+    padding-left: 10px;
+}
+
+/* ============================= */
+/* FORMULARIOS */
+/* ============================= */
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #A51931;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #FFFFFF;
+    color: #2D2A4A;
+}
+
+/* ============================= */
+/* TARJETAS ENTRENAMIENTOS */
+/* ============================= */
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: scale(1.02);
+    background: rgba(255,255,255,0.2);
+}
+
+/* ============================= */
+/* MENSAJES FLASH */
+/* ============================= */
+
+.mensaje {
+    background-color: #A51931;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* ============================= */
+/* IMÁGENES DECORATIVAS */
+/* ============================= */
+
+.imagen-destacada {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.6);
+}
+
+/* ============================= */
+/* ANIMACIONES */
+/* ============================= */
+
+.contenedor {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
